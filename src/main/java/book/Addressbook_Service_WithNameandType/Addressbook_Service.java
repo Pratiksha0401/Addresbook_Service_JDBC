@@ -11,12 +11,16 @@ public class Addressbook_Service
     {
     	System.out.println("Select option");
 		System.out.println("1. Retrieve All Records ");
+		System.out.println("2. Update Record ");
 		int option = sc.nextInt();
 		//using switch case to select option weather to add data or display data
 		switch(option) {
 		case 1:
 			printData();
 			break;
+		case 2:
+			updateData();
+			break;			
 		}
 }
 
@@ -24,5 +28,14 @@ public class Addressbook_Service
 		AddressbookRepo addressbookRepo = new AddressbookRepo();
 		List<Contact> detailList = addressbookRepo.findAll();
 		detailList.forEach(value -> System.out.println(value));
+	}
+	
+	private static void updateData() throws ClassNotFoundException, SQLException {
+		System.out.println("Enter first name");
+		String firstName = sc.next();
+		System.out.println("Enter new phone number");
+		String phoneNo = sc.next();
+		AddressbookRepo updateInfo = new AddressbookRepo();
+		updateInfo.updateContact(firstName, phoneNo);
 	}
 }
