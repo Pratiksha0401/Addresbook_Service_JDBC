@@ -1,6 +1,7 @@
 package book.Addressbook_Service_WithNameandType;
 
 public class Contact {
+	private int Id;
 	private String FirstName;
 	private String LastName;
 	private String Address;
@@ -8,6 +9,15 @@ public class Contact {
 	private String PhoneNo;
 	private String Email_ID;
 	
+	
+	public int getId() {
+		return Id;
+	}
+
+	public void setId(int id) {
+		Id = id;
+	}
+
 	public String getFirstName() {
 		return FirstName;
 	}
@@ -47,13 +57,15 @@ public class Contact {
 	public void setPhoneNo(String phoneNo) {
 		PhoneNo = phoneNo;
 	}
-	
 
 	@Override
 	public String toString() {
-		return "Addressbook [FirstName=" + FirstName + ", LastName=" + LastName + ", Address=" + Address + ", City="
-				+ City + ", PhoneNo=" + PhoneNo +  "]";
+		return "Contact [Id=" + Id + ", FirstName=" + FirstName + ", LastName=" + LastName + ", Address=" + Address
+				+ ", City=" + City + ", PhoneNo=" + PhoneNo + "]";
 	}
+	
+
+	
 	
 
 	
