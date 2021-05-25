@@ -10,7 +10,7 @@ public class Addressbook_Service
     public static void main( String[] args ) throws ClassNotFoundException, SQLException
     {
     	System.out.println("Select option");
-		System.out.println("1. get all records ");
+		System.out.println("1. Retrieve All Records ");
 		int option = sc.nextInt();
 		//using switch case to select option weather to add data or display data
 		switch(option) {
