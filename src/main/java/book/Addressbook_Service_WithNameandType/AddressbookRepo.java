@@ -148,4 +148,65 @@ public class AddressbookRepo {
 				}
 				return details;
 		}
+		
+		//method to list contact  bt city name
+		public List<Contact> getContactByCity() throws SQLException {
+			
+			Connection connection = null;
+			Statement statement = null;
+			
+			List<Contact> details=new ArrayList<>();
+			try {
+				//loading and registering driver
+				DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver ());
+				
+				//establishing connection with getConncetion() method 
+				connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/addressbook_service", "root", "root");
+				
+				//creating object of statement with createStatement() method
+				statement = connection.createStatement();
+				//query to get list of contact by city name
+				String query = "select * from addressbook where City = 'Bhandara'";
+				
+				ResultSet result = statement.executeQuery(query);
+				
+				//using while loop with .next() method for result to get next result
+				while(result.next()) {
+					Contact info = new Contact();
+					
+					int id=result.getInt(1);
+					info.setId(id);
+					
+					String firstName = result.getString(2);
+					info.setFirstName(firstName);
+					
+					String lastName = result.getString(3);
+					info.setLastName(lastName);
+					
+					String address = result.getString(4);
+					info.setAddress(address);
+					
+					String city = result.getString(5);
+					info.setCity(city);
+					
+					String phoneNo = result.getString(8);
+					info.setPhoneNo(phoneNo);
+					
+					details.add(info);
+				}
+				}catch (SQLException e) {
+					e.printStackTrace();
+				}catch (Exception e) {
+					e.printStackTrace();
+				}finally {
+					//closing connection and statement
+					if(connection != null) {
+						connection.close();
+					}
+					if(statement != null) {
+					   statement.close();
+					}
+				}
+				return details;
+		}
 }
