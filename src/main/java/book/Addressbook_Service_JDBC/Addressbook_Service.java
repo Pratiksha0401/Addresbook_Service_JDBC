@@ -1,4 +1,4 @@
-package book.Addressbook_Service_WithNameandType;
+package book.Addressbook_Service_JDBC;
 
 import java.sql.SQLException;
 import java.util.List;
