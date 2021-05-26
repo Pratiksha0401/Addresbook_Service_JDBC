@@ -14,6 +14,7 @@ public class Addressbook_Service
 		System.out.println("2. Update Record ");		
 		System.out.println("3. Reterive Record For Particular Date Range ");
 		System.out.println("4. Get Contact By City Name ");
+		System.out.println("5. Insert Record ");
 		int option = sc.nextInt();
 		
 		switch(option) {
@@ -28,7 +29,9 @@ public class Addressbook_Service
 			break;	
 		case 4:
 			getContactByCity();
-			break;						
+			break;	
+		case 5:
+			InsertRecord();
 		}
 }
 
@@ -58,5 +61,40 @@ public class Addressbook_Service
 		AddressbookRepo addressbookRepo = new AddressbookRepo();
 		List<Contact> details = addressbookRepo.getContactByCity();
 		details.forEach(System.out::println);		
+	}
+	
+	private static void InsertRecord() throws SQLException {
+    	Contact info = new Contact();
+    	
+    	System.out.println("Enter FirstName");
+		info.setFirstName(sc.next());
+		
+		System.out.println("Enter LastName");
+		info.setLastName(sc.next());
+		
+		System.out.println("Enter Address");
+		info.setAddress(sc.next());
+		
+		System.out.println("Enter City");
+		info.setCity(sc.next());
+		
+		System.out.println("Enter State");
+		info.setState(sc.next());
+		
+		System.out.println("Enter ZipCode");
+		info.setZipCode(sc.next());
+		
+		System.out.println("Enter PhoneNumber");
+		info.setPhoneNo(sc.next());
+		
+		System.out.println("Enter EmailId");
+		info.setEmail_ID(sc.next());
+		
+		System.out.println("Enter Date Added");
+		info.setDate(sc.next());
+			
+		AddressbookRepo repo = new AddressbookRepo();
+		repo.insertRecord(info);
+		
 	}
 }
