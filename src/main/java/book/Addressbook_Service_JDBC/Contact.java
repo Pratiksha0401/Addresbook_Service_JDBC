@@ -76,6 +76,6 @@ public class Contact {
 		return "Contact [Id=" + Id + ", FirstName=" + FirstName + ", LastName=" + LastName + ", Address=" + Address
 				+ ", City=" + City + ", State=" + State + ", ZipCode=" + ZipCode + ", PhoneNo=" + PhoneNo
 				+ ", Email_ID=" + Email_ID + ", date=" + date + "]";
-	}	
+	}		
 	
 }

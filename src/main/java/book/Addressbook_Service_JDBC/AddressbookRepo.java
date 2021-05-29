@@ -10,7 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddressbookRepo {
-	
+		
+		private List<Contact> contactList=new ArrayList<>();
+		
+		private AddressbookRepo (List<Contact> contactList) {
+			this();
+			this.contactList=contactList;
+		}
+		public AddressbookRepo() {
+			// TODO Auto-generated constructor stub
+		}
 		//method to get data in list
 		public List<Contact>findAll() throws SQLException {
 			Connection connection = null;
@@ -120,7 +129,7 @@ public class AddressbookRepo {
 				//creating object of statement with createStatement() method
 				statement = connection.createStatement();
 				//query to pass
-				String query = "Select * from addressbook where Start_Date between Cast('2020-01-01' as date) and date(now())";
+				String query = "Select * from addressbook where addDate between Cast('2020-01-01' as date) and date(now())";
 				
 				ResultSet result = statement.executeQuery(query);
 				
