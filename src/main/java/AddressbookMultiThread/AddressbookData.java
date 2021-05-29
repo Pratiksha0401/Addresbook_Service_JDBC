@@ -12,6 +12,14 @@ public class AddressbookData {
 	public String Email_ID;
 	public String date;
 	
+	public String getFirstName() {
+		return FirstName;
+	}
+
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
+	}
+
 	public AddressbookData( String firstName, String lastName, String address, String city, String state,
 			String zipCode, String phoneNo, String email_ID, String date) {
 		this.FirstName = firstName;

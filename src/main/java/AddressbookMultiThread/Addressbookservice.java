@@ -24,6 +24,8 @@ public class Addressbookservice {
 					e.printStackTrace();
 				}
 			};
+			Thread thread = new Thread(task, value.getFirstName());
+			thread.start();
 		});
 		Instant end = Instant.now();
 		System.out.println("Duration with thread:" +Duration.between(start, end));

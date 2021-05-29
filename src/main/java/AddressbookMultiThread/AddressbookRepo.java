@@ -19,7 +19,7 @@ public void insertMultipleRecord(AddressbookData value) throws SQLException {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/addressbook_service", "root", "root");
 			try {
 				connection.setAutoCommit(false);
-				String query = "insert into addressbook(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,EmailId,date_added) value(?,?,?,?,?,?,?,?,?)";
+				String query = "insert into addressbook(FirstName,LastName,Address,City,State,Zip,PhoneNo,Email_ID,addDate) value(?,?,?,?,?,?,?,?,?)";
 				prepstatement = connection.prepareStatement(query);
 				prepstatement.setString(1, value.FirstName);
 				prepstatement.setString(2, value.LastName);
