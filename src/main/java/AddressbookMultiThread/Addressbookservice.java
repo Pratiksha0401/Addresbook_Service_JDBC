@@ -8,9 +8,9 @@ import java.util.Arrays;
 public class Addressbookservice {
 	public static void main(String[] args) throws SQLException {
 		AddressbookData[] data = {
-				new AddressbookData("Mark","James","WestVilla","Kentucky","NewStates","610034","9672456102","mark123@gmail.com","2020-04-21"),
-				new AddressbookData("Stock","Holmes","CrossHill","Missouri","Texas","420034","9011456102","stockHolmes@gmail.com","2020-05-11"),
-				new AddressbookData("Katty","Cooper","OxfordRoad","Vegas","LasVegas","74234","870156102","katty63@outlook.com","2020-05-25")
+				new AddressbookData("Mark","Smith","WestVilla","Kentucky","NewStates","510034","9000056102","mark123@gmail.com","2020-04-21"),
+				new AddressbookData("Gary","Lu","CrossHill","Missouri","Texas","120000","911456102","lu@gmail.com","2020-05-11"),
+				new AddressbookData("Sam","Sam","OxfordRoad","Vegas","LasVegas","842300","990156102","sam@outlook.com","2020-05-25")
 		};
 		
 		AddressbookRepo repo = new AddressbookRepo();	

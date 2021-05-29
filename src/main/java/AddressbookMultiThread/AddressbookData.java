@@ -14,7 +14,6 @@ public class AddressbookData {
 	
 	public AddressbookData( String firstName, String lastName, String address, String city, String state,
 			String zipCode, String phoneNo, String email_ID, String date) {
-
 		this.FirstName = firstName;
 		this.LastName = lastName;
 		this.Address = address;
