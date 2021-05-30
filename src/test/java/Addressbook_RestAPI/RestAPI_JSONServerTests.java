@@ -35,17 +35,17 @@ public class RestAPI_JSONServerTests {
 		};	
 	}
 	
-	@Test(dataProvider = "dataForPost")
+	//@Test(dataProvider = "dataForPost")
 	public void addMultipleRecords_shouldReturn_201statusCode(String firstName, String lastName, String address, String city, String state, String phoneNumber ,String emailId) {
 		JSONObject request = new JSONObject();
 		
-		request.put("FirstName", firstName);
-		request.put("LastName",  lastName);
-		request.put("Address", address);
-		request.put("City", city);
-		request.put("State", state);
-		request.put("PhoneNumber", phoneNumber);
-		request.put("EmailId", emailId);
+		request.put("firstName", firstName);
+		request.put("lastName",  lastName);
+		request.put("address", address);
+		request.put("city", city);
+		request.put("state", state);
+		request.put("phoneNumber", phoneNumber);
+		request.put("emailId", emailId);
 		
 		baseURI ="http://localhost";
 		port = 3000;
@@ -63,18 +63,17 @@ public class RestAPI_JSONServerTests {
 	}
 	
 	//run with junit as well
-	@Test
+	//@Test
 	public void addSingleRecords_shouldReturn_201statusCode() {
 		JSONObject request = new JSONObject();
 		
-		request.put("FirstName", "Nikhita");
-		request.put("FirstName", "Nikita");
-		request.put("LastName",  "Pardhi");
-		request.put("Address", "Tilak Nagar");
-		request.put("City","Nagpur");
-		request.put("State", "MH");
-		request.put("PhoneNumber", "13254678");
-		request.put("EmailId", "nikita@rediffmail.com");
+		request.put("firstName", "Nikhita");
+		request.put("lastName",  "Pardhi");
+		request.put("address", "Tilak Nagar");
+		request.put("city","Nagpur");
+		request.put("state", "MH");
+		request.put("phoneNumber", "13254678");
+		request.put("emailId", "nikita@rediffmail.com");
 		
 		baseURI ="http://localhost";
 		port = 3000;
@@ -90,4 +89,22 @@ public class RestAPI_JSONServerTests {
 		      statusCode(201).
 		      log().all();
 	}
+	
+	@Test
+	public void updateExistingRecord_shouldReturn_200statusCode() {
+		JSONObject request = new JSONObject();
+		request.put("firstName", "Pranali" );
+		baseURI ="http://localhost";
+		port = 3000;
+			given().
+		       contentType(ContentType.JSON).
+		       accept(ContentType.JSON).
+		       header("Content-Type", "application/json").
+		       body(request.toJSONString()).
+		       when().
+		       patch("/Contacts/4").
+	       then().
+		       statusCode(200).
+		       log().all();
+		}
 }
