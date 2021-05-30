@@ -60,7 +60,7 @@ public class RestAPI_JSONServerTests {
 	public void addSingleRecords_shouldReturn_201statusCode() {
 		JSONObject request = new JSONObject();
 		
-		request.put("FirstName", "Nikita");
+		request.put("FirstName", "Nikhita");
 		request.put("LastName",  "Pardhi");
 		request.put("Address", "Tilak Nagar");
 		request.put("City","Nagpur");
