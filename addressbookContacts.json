@@ -29,16 +29,6 @@
       "emailId": "sam@outlook.com",
       "state": "LasVegas",
       "id": 3
-    },
-    {
-      "firstName": "Pranali",
-      "lastName": "Pardhi",
-      "address": "Tilak Nagar",
-      "phoneNumber": "13254678",
-      "city": "Nagpur",
-      "emailId": "nikita@rediffmail.com",
-      "state": "MH",
-      "id": 4
     }
   ]
 }

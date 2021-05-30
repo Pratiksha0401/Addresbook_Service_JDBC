@@ -90,7 +90,7 @@ public class RestAPI_JSONServerTests {
 		      log().all();
 	}
 	
-	@Test
+	//@Test
 	public void updateExistingRecord_shouldReturn_200statusCode() {
 		JSONObject request = new JSONObject();
 		request.put("firstName", "Pranali" );
@@ -107,4 +107,17 @@ public class RestAPI_JSONServerTests {
 		       statusCode(200).
 		       log().all();
 		}
+	
+	@Test
+	public void deleteDatafromExistingRecord_shouldReturn_200statusCode() {
+		baseURI ="http://localhost";
+		port = 3000;
+		
+		when().
+		       delete("/Contacts/4").
+		then().
+		       statusCode(200).
+		       log().all();
+		
+	}		
 }

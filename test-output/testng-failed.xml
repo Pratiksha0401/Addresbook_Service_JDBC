@@ -5,7 +5,7 @@
     <classes>
       <class name="Addressbook_RestAPI.RestAPI_JSONServerTests">
         <methods>
-          <include name="addSingleRecords_shouldReturn_201statusCode"/>
+          <include name="deleteDatafromExistingRecord_shouldReturn_200statusCode"/>
         </methods>
       </class> <!-- Addressbook_RestAPI.RestAPI_JSONServerTests -->
     </classes>
