@@ -3,9 +3,16 @@ package Addressbook_RestAPI;
 import static io.restassured.RestAssured.*;
 
 import org.json.simple.JSONObject;
+<<<<<<< HEAD
 //import org.junit.Test;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+=======
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+>>>>>>> UC23_addMultipleEntries_to_Addressbook_JSONServer
 import io.restassured.http.ContentType;
 
 public class RestAPI_JSONServerTests {
@@ -60,7 +67,11 @@ public class RestAPI_JSONServerTests {
 	public void addSingleRecords_shouldReturn_201statusCode() {
 		JSONObject request = new JSONObject();
 		
+<<<<<<< HEAD
 		request.put("FirstName", "Nikhita");
+=======
+		request.put("FirstName", "Nikita");
+>>>>>>> UC23_addMultipleEntries_to_Addressbook_JSONServer
 		request.put("LastName",  "Pardhi");
 		request.put("Address", "Tilak Nagar");
 		request.put("City","Nagpur");

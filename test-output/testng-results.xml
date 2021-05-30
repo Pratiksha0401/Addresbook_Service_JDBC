@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -8,6 +9,103 @@
     <test started-at="2021-05-30T16:19:22 IST" name="Default test" finished-at="2021-05-30T16:19:25 IST" duration-ms="2739">
       <class name="Addressbook_RestAPI.RestAPI_JSONServerTests">
         <test-method signature="givenemployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount()[pri:0, instance:Addressbook_RestAPI.RestAPI_JSONServerTests@4e268090]" started-at="2021-05-30T16:19:23 IST" name="givenemployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount" finished-at="2021-05-30T16:19:25 IST" duration-ms="2683" status="PASS">
+=======
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-30T16:41:46 IST" name="Default suite" finished-at="2021-05-30T16:41:50 IST" duration-ms="3777">
+    <groups>
+    </groups>
+    <test started-at="2021-05-30T16:41:46 IST" name="Default test" finished-at="2021-05-30T16:41:50 IST" duration-ms="3777">
+      <class name="Addressbook_RestAPI.RestAPI_JSONServerTests">
+        <test-method signature="addMultipleRecords_shouldReturn_201statusCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Addressbook_RestAPI.RestAPI_JSONServerTests@4e268090]" started-at="2021-05-30T16:41:46 IST" name="addMultipleRecords_shouldReturn_201statusCode" data-provider="dataForPost" finished-at="2021-05-30T16:41:49 IST" duration-ms="3436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mark]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[WestVilla]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kentucky]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[NewStates]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9000056102]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mark123@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleRecords_shouldReturn_201statusCode -->
+        <test-method signature="addMultipleRecords_shouldReturn_201statusCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Addressbook_RestAPI.RestAPI_JSONServerTests@4e268090]" started-at="2021-05-30T16:41:49 IST" name="addMultipleRecords_shouldReturn_201statusCode" data-provider="dataForPost" finished-at="2021-05-30T16:41:49 IST" duration-ms="93" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OxfordRoad]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vegas]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LasVegas]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[990156102]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[sam@outlook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleRecords_shouldReturn_201statusCode -->
+        <test-method signature="addSingleRecords_shouldReturn_201statusCode()[pri:0, instance:Addressbook_RestAPI.RestAPI_JSONServerTests@4e268090]" started-at="2021-05-30T16:41:49 IST" name="addSingleRecords_shouldReturn_201statusCode" finished-at="2021-05-30T16:41:49 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleRecords_shouldReturn_201statusCode -->
+        <test-method signature="givenemployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount()[pri:0, instance:Addressbook_RestAPI.RestAPI_JSONServerTests@4e268090]" started-at="2021-05-30T16:41:49 IST" name="givenemployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount" finished-at="2021-05-30T16:41:50 IST" duration-ms="100" status="PASS">
+>>>>>>> UC23_addMultipleEntries_to_Addressbook_JSONServer
           <reporter-output>
           </reporter-output>
         </test-method> <!-- givenemployeeDataInJSONServer_WhenRetrieved_ShouldMatchTheCount -->
