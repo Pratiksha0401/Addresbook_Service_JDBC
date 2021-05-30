@@ -12,6 +12,14 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+target
+test-output
+test-output-tests
+testng.iml
+z_build
+.DS_Store
+HELP.md
+test-output/
 
 ## Eclipse
 ##############################
