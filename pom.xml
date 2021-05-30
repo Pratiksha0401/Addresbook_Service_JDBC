@@ -46,20 +46,12 @@
 	    <artifactId>gson</artifactId>
 	    <version>2.7</version>
 	</dependency>
-<<<<<<< HEAD
-	<dependency>
-=======
 	 <dependency>
->>>>>>> UC23_addMultipleEntries_to_Addressbook_JSONServer
 		<groupId>org.testng</groupId>
 		<artifactId>testng</artifactId>
 		<version>7.1.0</version>
 		<scope>test</scope>
-<<<<<<< HEAD
 	</dependency>	
-=======
-	</dependency>
->>>>>>> UC23_addMultipleEntries_to_Addressbook_JSONServer
   </dependencies>
 
   <build>
